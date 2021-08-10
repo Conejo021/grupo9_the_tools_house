@@ -10,7 +10,7 @@ Se apunta a un publico tanto industrial como particular, se facilita el uso de l
 # Los integrantes del grupo son: 
 Julian Ginepro, 
 Gustavo Coniglio,
-Cinthia Herbsommer.
+Cinthia Herbsommer,
 Andres Urbano.
 
 # Sitios de Referencia:
