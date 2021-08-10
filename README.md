@@ -1,4 +1,4 @@
-# grupo_9_the_tools_house
+# grupo9_the_tools_house
 Proyecto de la pagina de e-commerce
 
 # Descripcion de la oferta ofrecida:
@@ -11,6 +11,7 @@ Se apunta a un publico tanto industrial como particular, se facilita el uso de l
 Julian Ginepro, 
 Gustavo Coniglio,
 Cinthia Herbsommer.
+Andres Urbano.
 
 # Sitios de Referencia:
 
