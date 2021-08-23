@@ -18,3 +18,11 @@ app.get('/login', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
 });
+
+app.get('/detalleDeproducto', (req,res)=>{
+    res.sendFile(__dirname + '/views/detalleDeProducto.html');
+});
+
+app.get('/carritoDeCompras', (req,res)=>{
+    res.sendFile(__dirname + '/views/carritoDeCompras.html');
+});
