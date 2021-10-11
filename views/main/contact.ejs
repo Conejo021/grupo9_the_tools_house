@@ -1,0 +1,44 @@
+<% include ../partials/head %>
+
+    <body>
+        <% include ../partials/header %>
+
+        <div class="form-wrap">
+            <div class="form register-form">
+                <h1>Contacto</h1>
+                    <form form method="POST" action='/main/contact'>
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Nombre" name="first_name" value="<%= locals.oldData ? oldData.first_name : null %>">
+                        <% if (locals.errors && errors.first_name) { %>
+                            <div class='text-danger'>
+                                <%= errors.first_name.msg %>
+                            </div>
+                            <% } %>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Apellido" name="last_name" value="<%= locals.oldData ? oldData.last_name : null %>">
+                    </div>
+                    <div class="input-wrap">
+                        <input type="email" placeholder="E-mail" name="email" value="<%= locals.oldData ? oldData.email : null %>">
+                        <% if (locals.errors && errors.email) { %>
+                            <div class='text-danger'>
+                                <%= errors.email.msg %>
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="input-wrap">
+                        <textarea placeholder="Escribe tu consulta" name="query" value="" rows="10" cols="30"></textarea>
+                    </div>
+                    <div class="input-wrap">
+                        <button type="submit">ENVIAR</button>
+                    </div>
+                    </form>
+            </div>
+        
+        </div>
+
+        <% include ../partials/footer %>
+
+    </body>
+
+    </html>

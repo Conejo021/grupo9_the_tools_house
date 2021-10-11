@@ -1,0 +1,11 @@
+[
+  {
+  "id": 1,
+  "first_name": "pepito",
+  "last_name": "perez",
+  "email": "pepito@perez.com",
+  "password": "$2a$10$F7B7qXv5.ixur.f3NIfpIOpS2b9oub4PqA.fQwWQaLZoi0NB4kIce",
+  "confirm_password": "$2a$10$UyAdwBCe9VX4R9o5uY6CV.Sbd.r9Ryw5lFEFoVLnHEkyZgONdVEmq",
+  "avatar": "1633901853986_img.jpg"
+ }
+]

@@ -1,28 +1,62 @@
+const createError = require('http-errors');
 const express = require('express');
+const path = require('path');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const methodOverride = require('method-override')
+
+const indexRouter = require('./routes/')
+const productsRouter = require('./routes/products')
+const usersRouter = require('./routes/users')
+const adminRouter = require('./routes/admin')
+
 const app = express();
-app.use(express.static('public'));
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use(session({ secret: 'Mensaje secreto',
+  resave: false,
+  saveUninitialized: false,
+}));
+
+app.use(userLoggedMiddleware);
+
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'))
 
 
-app.listen(process.env.PORT || 3000, function() {
-    console.log('Servidor funcionando en el puerto 3000');
+// Router
+app.use('/', indexRouter);
+app.use('/products', productsRouter);
+app.use('/users', usersRouter);
+app.use('/admin', adminRouter);
+
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
 });
 
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
+module.exports = app;
 
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
-});
 
-app.get('/detalleDeproducto', (req,res)=>{
-    res.sendFile(__dirname + '/views/detalleDeProducto.html');
-});
-
-app.get('/carritoDeCompras', (req,res)=>{
-    res.sendFile(__dirname + '/views/carritoDeCompras.html');
-});

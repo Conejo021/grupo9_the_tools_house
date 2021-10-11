@@ -1,0 +1,49 @@
+<% include ../partials/head %>
+
+    <body>
+
+        <% include ../partials/header %>
+
+        <section class="admin">
+          <div class="contianer">
+            
+          </div>
+        </section>
+        
+    <section class="row">
+            <article class="col-12 ">
+              <h2 class="display-4 text-white bg-info text-center pt-2">Administrador de Productoss</h2>
+            </article>
+            <article class="col-12">
+              <a href="/admin/create"><ion-icon name="add-circle-outline"></ion-icon>Agregar</a>
+            </article>
+            <article class="col-12" >
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Ver</th>
+                    <th scope="col">Editar</th>
+                    <th scope="col">Borrar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% products.forEach(product => { %>
+                  <tr>
+                    <td><%= product.id%> </td>
+                    <td><%= product.nombre%> </td>
+                    <td><a href="/admin/detail/<%= product.id%>">Ver</a></td>
+                    <td><a href="/admin/edit/<%= product.id%>">Editar</a></td>
+                    <td><a href="/admin/delete/<%= product.id%>">Borrar</a></td>
+                  </tr>
+                  <% }); %>
+                </tbody>
+              </table> 
+            </article>       
+          </section>
+            
+        <% include ../partials/footer %>
+    </body>
+
+</html>

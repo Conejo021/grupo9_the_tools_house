@@ -1,0 +1,59 @@
+<% include ../partials/head %>
+  <body>
+    <% include ../partials/header %>
+
+    <!-- SLIDER OFERTAS/DESTACADAS-->
+    <section class="container-slider-featured">
+        <img src="../images/banner.jpg" alt="banner" class="banner">
+    </section> 
+    
+    <main class="home-main">
+      <div class="container-shop">
+        <h3>Productos Destacados</h3>
+          <section class="container-products">
+            <% products.forEach(product => { %>
+              <% if (product.descuento == 30) { %> 
+                <div class="product">
+                  <a href="products/productDetail/id:"><img src="/imagenes/products/<%= product.imagen%>" width='90' height='120'
+                    alt="<%= product.nombre%>" class="product-img">
+                  </a>
+                  <div class="main-article">
+                  <h4 class= "description"><%= product.nombre%></h4>
+                  <span class= "price">$ <%= product.precio%></span>
+                  </div>  
+                  <a href="#"><i class="cart-icon fas fa-cart-plus"></i></a>
+                </div>
+              <% } %>
+            <% }); %>
+          </section>
+      </div>
+     
+     <!-- CARRUSEL MARCAS DESTACADAS
+        <section class="carousel-brands">
+        <h3>Carrusel Marcas destacadas</h3>
+        </section> -->
+
+     <section class="container-tips">
+        <div class="tip">
+        <i class="fas fa-beer icono-footer" ></i>
+          <h4 class="tip-title">Variedad</h4>
+          <p class="tip-text">Gran cantidad de productos de primera calidad.</p>
+        </div>
+        <div class="tip">
+          <i class="fas fa-credit-card icono-footer"></i>
+          <h4 class="tip-title">Elegí cómo pagar</h4>
+          <p class="tip-text">Podés pagar con tarjeta, débito y medios electrónicos.</p>
+        </div>
+        <div class="tip">
+          <i class="fas fa-truck icono-footer"></i>
+          <h4 class="tip-title">Envíos </h4>
+          <p class="tip-text">Te lo llevamos a tu casa con el máximo cuidado.</p>
+        </div>
+     </section>
+    
+    </main>
+
+    <% include ../partials/footer %>
+    </body>
+  
+</html>

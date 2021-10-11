@@ -1,0 +1,55 @@
+
+
+    <% include ../partials/head %>
+
+    <body>
+
+        <% include ../partials/header %>
+
+        <form action="/admin/create" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required"
+                    value="">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="descripcion" placeholder="Descripción"
+                    required="required" value="">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="precio" placeholder="Precio" required="required"
+                    value="">
+            </div>
+            <div class="form-group">
+                <select name="tipo" class="custom-select" id="validationCustom04" required>
+                    <option selected disabled value="#">tipo</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="descuento" class="custom-select" id="validationCustom04" required>
+                    <option selected disabled value="#">Elija su descuento</option>
+                    <option value="0">Sin descuento</option>
+                    <option value="15">15%</option>
+                    <option value="30">30%</option>
+                </select>
+            </div>
+            <!--Aquí solicito la imagen-->
+            <div class="custom-file">
+                <input type="file" name="imagen">
+                <!--<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" name="imagen" required value=""> 
+
+    <label class="custom-file-label" for="inputGroupFile01">Seleccione una imagen...</label>-->
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn btn-info">Guardar</button>
+                <a href="/admin" class="btn btn-danger">Volver</a>
+            </div>
+
+        </form>
+        
+            
+        <% include ../partials/footer %>
+    </body>
+
+</html>

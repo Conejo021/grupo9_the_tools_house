@@ -1,0 +1,49 @@
+<% include ../partials/head %>
+
+    <body>
+
+        <% include ../partials/header %>
+
+        <form action="/admin/edit/<%= productEdit.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre" required="required" value="<%= productEdit.nombre%>">
+                </div>	
+                <div class="form-group">
+                    <input type="text" class="form-control" name="descripcion" placeholder="Descripción" required="required" value="<%= productEdit.descripcion%>">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="precio" placeholder="Indique el precio" required="required" value="<%= productEdit.precio%>">
+                </div>
+                <div class="form-group">
+                    <select  name="descuento" class="custom-select" id="validationCustom04" required>
+                      <option disabled value="#">Seleccione un descuento"</option>
+                      <option value="0" <%= productEdit.descuento == 0 ? "selected" : null %>
+                        >Sin descuento</option>
+                      <option value="15" <%= productEdit.descuento == 15 ? "selected" : null %>>15%</option>
+                      <option value="30" <%= productEdit.descuento == 30 ? "selected" : null %>>30%</option>
+                    </select>
+                </div>
+                <!--Aquí solicito la imagen-->
+                <div class="custom-file">
+                    <figure class="form-group">
+                        <img  class="w-100" src="/imagenes/products/<%= productEdit.imagen%>" alt="product <%= productEdit.nombre%>">
+                    </figure>
+                    <input type="hidden"  name="oldImagen"  value="<%= productEdit.imagen%>">
+                    <!--De esta forma logro conservar y que viaje la imagen anterior de esta forma evito que el usuario seleccione una imagen nuevamente, ( si no lo desea) -->
+                    <input type="file" name="imagen" >
+                    <!--<input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" name="imagen" required value=""> 
+
+                    <label class="custom-file-label" for="inputGroupFile01">Seleccione una imagen...</label>-->
+                  </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn btn-info">Actualizar</button>
+                    <a href="/admin" class="btn btn-danger">Volver</a>
+                </div>
+                
+            </form>
+
+
+        <% include ../partials/footer %>
+    </body>
+
+    </html>

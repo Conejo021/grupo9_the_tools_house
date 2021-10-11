@@ -1,0 +1,41 @@
+<% include ../partials/head %>
+
+    <body>
+        <% include ../partials/header %>
+
+            <div class="form-wrap">
+                <div class="form login-form">
+                    <h1>iniciar sesion</h1>
+                    <form method="POST" action='/users/login'>
+                        <div class="input-wrap">
+                            <input type="email" placeholder="E-mail" name="email" >
+                            <% if (locals.errors && errors.email) { %>
+                                <div class='text-danger'>
+                                    <%= errors.email.msg %>
+                                </div>
+                            <% } %>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" placeholder="Contraseña" name="password">
+                        </div>
+                        <div class="input-wrap login">
+                            <button type="submit">Iniciar Sesion</button>
+                            <input type="checkbox" name="remember_user">
+                            <p>Recordarme</p>
+                        </div>
+                        <div class="form-botton">
+                            <div class="input-wrap">
+                                <a href="">¿Olvidaste tu Contraseña?</a>
+                            </div>
+                            <div class="input-wrap">
+                                <p>No tienes cuenta, registrate <a href="/users/register">aqui</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <% include ../partials/footer %>
+    </body>
+
+    </html>

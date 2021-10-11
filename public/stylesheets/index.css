@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+a, a:active, a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  padding: 1rem;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.container-slider-featured {
+  display: none;
+}
+
+img.fondo-slider {
+  width: 100%;
+}
+
+.fondo-SLIDER {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+
+/* CARRUSEL MARCAS
+.carousel-brands {
+  background-color: #BCBCBC;
+}*/
+
+.container-tips {
+  background-color: rgba(0, 0, 0, 0.842);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+
+@media (max-width: 63.9375em) {
+  
+  .container-tips {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tip:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  
+}
+
+.container-slider-featured {
+  display: block;
+}

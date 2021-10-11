@@ -1,0 +1,37 @@
+<% include ../partials/head %>
+
+    <body>
+
+        <% include ../partials/header %>
+            <div class="detail-container">
+                <div class="product-main">
+                    <img src="/imagenes/products/<%= myProduct.imagen%>" width='250'
+                        height='350' alt="views admin detail">
+                    <h1><%= myProduct.nombre%> X6</h1>
+                </div>
+                <div class="product-description">
+                    <div class="description-text">
+                        <p><%= myProduct.descripcion%>
+                            <br> descripcion
+                        </p>
+                    </div>
+                    <br>
+                    <div class="product-data">
+                        <p class="data-title">Ficha Técnica:</p>
+                        <p><%= myProduct.origen%></p>
+                        <p>Caracteristica 1</p>
+                        <p>Caracteristica 2</p>
+                        <p>Caracteristica 3</p>
+                    </div>
+                    <div class="price flex flex-ai-center flex-jc-sb ">
+                        <p class="price">Texto ad <br>$ <%= myProduct.precio%></p>
+                        <a href="#" class="button">Agregar al Carrito</a>
+                        <a href="#" class="button">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        <% include ../partials/footer %>
+    </body>
+
+</html>        
