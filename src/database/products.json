@@ -1,0 +1,34 @@
+[
+    {
+      "id": "1",
+      "nombre": "Amoladora sin marca",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "10000",
+      "descuento": "40",
+      "imagen": "amoladora.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Cortadora de pasto Coto",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "100000",
+      "descuento": "10",
+      "imagen": "cortadoradepasto.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Grupo Electrogeno Gamma",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "250000",
+      "descuento": "10",
+      "imagen": "grupoelectrogeno.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Caja de herramientas Coto",
+      "descripcion": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "precio": "30000",
+      "descuento": "15",
+      "imagen": "herramientas.jpg"
+    }
+  ]

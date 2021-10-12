@@ -1,22 +1,43 @@
-1. Comenzar a hacer
-Coordinar mejor los tiempos.
+# 1. Comenzar a hacer:
 
-2. Hacer más
-Mayor comunicación con los compañeros.
-Utilizar más Trello para simplificar las actividades.
-Repartir mejor las tareas.
-Reunirse con mayor frecuencia, en forma más breve para poder ver los avances y solucionar mejor los problemas que surjan.
-Aportar ideas entre todos para resolver el sprint y solucionar los problemas que puedan aparecer al codear.
+ Realizar reuniones mas seguidas con el grupo con un tiempo de duracion 1 hs diaria.
 
-3. Continuar haciendo
-Compartir las problemáticas con el grupo para solucionar más rápidamente.
-Manejar mejor los tiempos de entrega.
-Corrección de errores y detalles que trae el proyecto de sprints anteriores.
+ Mayor comunicacion entre los integrantes sobre el avance del proyecto.
 
-4. Hacer menos
-Aplazar reuniones.
+ Mayor intercambio de ideas sobre la pagina a realizar.
 
-5. Dejar de hacer
-Alargar los plazos.
+ Testear pruebas para empezar a codear.
 
+ Usar el tablero de trabajo
 
+# 2. Hacer más:
+
+Codificacion de los archivos requeridos para la pagina.
+
+Investigar mas sobre otras paginas como es su codificacion.
+
+Revisar el material de estudio de clases anteriores con respecto de los programas a utilizar.
+
+# 3. Continuar haciendo:
+
+Retomar los conceptos obtenidos desde el anterior sprint.
+
+Seguir con reuniones frecuentes.
+
+Hacer lluvias de ideas.
+
+Buscar fuentes externas.
+
+Googlear conceptos que no entendemos.
+
+Reportar al profesor errores que encontramos para poder finalizar el sprint.
+
+# 4. Hacer menos:
+
+No tomar como como punto de partida trabajos anteriores.
+
+# 5. Dejar de hacer:
+
+Armar el sprint numero 2 , mejorando los errores del sprint anterior.
+
+Descartar fallas en el sprint anterior. 
