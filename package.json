@@ -20,7 +20,23 @@
     "method-override": "^3.0.0",
     "morgan": "~1.9.1",
     "multer": "^1.4.3",
-    "nodemon": "^2.0.13",
-    "npm": "^7.20.3"
-  }
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3-rc.0",
+    "nodemon": "^2.0.14",
+    "npm": "^7.20.3",
+    "sequelize": "^6.9.0"
+  },
+  "description": "HTML5, CSS, Express, Node",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conejo021/grupo9_the_tools_house.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Conejo021/grupo9_the_tools_house/issues"
+  },
+  "homepage": "https://github.com/Conejo021/grupo9_the_tools_house#readme"
 }
