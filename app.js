@@ -8,6 +8,7 @@ const methodOverride = require('method-override')
 
 const indexRouter = require('./routes/')
 const productsRouter = require('./routes/products')
+const marcasRouter = require('./routes/marcas')
 const usersRouter = require('./routes/users')
 const adminRouter = require('./routes/admin')
 

@@ -1,9 +1,9 @@
 {
-  "name": "grupo9_the_tools_house",
+  "name": "grupo9_the_tool_house",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon ./bin/www"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -12,7 +12,7 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "ejs-lint": "^1.2.1",
-    "express": "^4.17.1",
+    "express": "^4.16.4",
     "express-session": "^1.17.2",
     "express-validator": "^6.12.1",
     "http-errors": "~1.6.3",
@@ -23,8 +23,7 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3-rc.0",
     "nodemon": "^2.0.15",
-    "npm": "^7.20.3",
-    "sequelize": "^6.9.0"
+    "npm": "^7.20.3"
   },
   "description": "HTML5, CSS, Express, Node",
   "main": "app.js",
