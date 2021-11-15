@@ -10,50 +10,99 @@
     <main class="home-main">
       <div class="container-shop">
         <h3>Productos Destacados</h3>
-          <section class="container-products">
-            <% products.forEach(product => { %>
-              <% if (product.descuento == 30) { %> 
-                <div class="product">
-                  <a href="products/productDetail/id:"><img src="/imagenes/products/<%= product.imagen%>" width='90' height='120'
-                    alt="<%= product.nombre%>" class="product-img">
-                  </a>
-                  <div class="main-article">
-                  <h4 class= "description"><%= product.nombre%></h4>
-                  <span class= "price">$ <%= product.precio%></span>
-                  </div>  
-                  <a href="#"><i class="cart-icon fas fa-cart-plus"></i></a>
-                </div>
-              <% } %>
-            <% }); %>
-          </section>
+        <section class="container-products">
+          <div class="product">
+              <img src="..\images\productos\baterias-bosch-14.4v.jpg" width='200'
+                      height='190' alt="Producto 1" class="product-img">
+              </a>
+              <div class="main-article">
+                  <h4 class="description">Bateria Bosch</h4>
+                  <span class="price">$ 18000</span>
+              </div>
+              
+          </div>
+          <div class="product">
+              <img src="..\images\productos\taladros-percutores-bosch.jpg" width='200'
+                      height='190' alt="Producto 2" class="product-img"></a>
+              <div class="main-article">
+                  <h4 class="description">Taladros-percutores-bosch</h4>
+                  <span class="price">$ 20000</span>
+              </div>
+             
+          </div>
+          <div class="product">
+              <img src="..\images\productos\tijeras-facom.jpg" width='200'
+                      height='190' alt="Producto 3" class="product-img"></a>
+              <div class="main-article">
+                  <h4 class="description">Tijeras-facom</h4>
+                  <span class="price">$ 8000</span>
+              </div>
+              
+          </div>
+          <div class="product">
+              <img src="..\images\productos\transpaletas-manuales-eletricas.jpg" width='200'
+                      height='190' alt="Producto 4" class="product-img"></a>
+              <div class="main-article">
+                  <h4 class="description">Transpalets</h4>
+                  <span class="price">$ 60000</span>
+              </div>
+              
+          </div>
+          <div class="product">
+              <img src="..\images\productos\mejores-juegos-destornilladores-grandes-pequenos-largos.jpg"
+                      width='200' height='190' alt="Producto 5" class="product-img"></a>
+              <div class="main-article">
+                  <h4 class="description">Juego de Atornilladores</h4>
+                  <span class="price">$ 15000</span>
+              </div>
+              
+          </div>
+        </section>
+
+        <!--<section class="container-products">
+          <% products.forEach(product => { %>
+            <% if (product.descuento == 30) { %> 
+              <div class="product">
+                <a href="products/productDetail/id:"><img src="/imagenes/products/<%= product.imagen%>" width='90' height='120'
+                  alt="<%= product.nombre%>" class="product-img">
+                </a>
+                <div class="main-article">
+                <h4 class= "description"><%= product.nombre%></h4>
+                <span class= "price">$ <%= product.precio%></span>
+                </div>  
+                <a href="#"><i class="cart-icon fas fa-cart-plus"></i></a>
+              </div>
+            <% } %>
+          <% }); %>
+        </section>-->
+    </div>
+   
+   <!-- CARRUSEL MARCAS DESTACADAS
+      <section class="carousel-brands">
+      <h3>Carrusel Marcas destacadas</h3>
+      </section> -->
+
+   <section class="container-tips">
+      <div class="tip">
+      <i class="fas fa-beer icono-footer" ></i>
+        <h4 class="tip-title">Variedad</h4>
+        <p class="tip-text">Gran cantidad de productos de primera calidad.</p>
       </div>
-     
-     <!-- CARRUSEL MARCAS DESTACADAS
-        <section class="carousel-brands">
-        <h3>Carrusel Marcas destacadas</h3>
-        </section> -->
-
-     <section class="container-tips">
-        <div class="tip">
-        <i class="fas fa-beer icono-footer" ></i>
-          <h4 class="tip-title">Variedad</h4>
-          <p class="tip-text">Gran cantidad de productos de primera calidad.</p>
-        </div>
-        <div class="tip">
-          <i class="fas fa-credit-card icono-footer"></i>
-          <h4 class="tip-title">Elegí cómo pagar</h4>
-          <p class="tip-text">Podés pagar con tarjeta, débito y medios electrónicos.</p>
-        </div>
-        <div class="tip">
-          <i class="fas fa-truck icono-footer"></i>
-          <h4 class="tip-title">Envíos </h4>
-          <p class="tip-text">Te lo llevamos a tu casa con el máximo cuidado.</p>
-        </div>
-     </section>
-    
-    </main>
-
-    <% include ../partials/footer %>
-    </body>
+      <div class="tip">
+        <i class="fas fa-credit-card icono-footer"></i>
+        <h4 class="tip-title">Elegí cómo pagar</h4>
+        <p class="tip-text">Podés pagar con tarjeta, débito y medios electrónicos.</p>
+      </div>
+      <div class="tip">
+        <i class="fas fa-truck icono-footer"></i>
+        <h4 class="tip-title">Envíos </h4>
+        <p class="tip-text">Te lo llevamos a tu casa con el máximo cuidado.</p>
+      </div>
+   </section>
   
+  </main>
+
+  <% include ../partials/footer %>
+  </body>
+
 </html>
