@@ -1,5 +1,5 @@
 [
-  {
+ {
   "id": 1,
   "first_name": "pepito",
   "last_name": "perez",
@@ -7,5 +7,23 @@
   "password": "$2a$10$F7B7qXv5.ixur.f3NIfpIOpS2b9oub4PqA.fQwWQaLZoi0NB4kIce",
   "confirm_password": "$2a$10$UyAdwBCe9VX4R9o5uY6CV.Sbd.r9Ryw5lFEFoVLnHEkyZgONdVEmq",
   "avatar": "1633901853986_img.jpg"
+ },
+ {
+  "id": 2,
+  "first_name": "Homero",
+  "last_name": "Simpson",
+  "email": "homero@gmail.com",
+  "password": "$2a$10$joRew6T1ZtWvumMf6jSWNeBj4/iEBIVIMs1idi86QXzu31LIGL96i",
+  "confirm_password": "$2a$10$JdIlvk/YsnsSnqkqwB8VNuTHDr5Utd44EJYQlhM1sp.xiGWLKoaoi",
+  "avatar": "1637025916386_img.png"
+ },
+ {
+  "id": 3,
+  "first_name": "bart",
+  "last_name": "simpson",
+  "email": "bart@gmail.com",
+  "password": "$2a$10$Rg2AWJiR0bshHSBp7/CklOb/Svds/dV1VDpHspXmmwOtFzhWtrUtS",
+  "confirm_password": "$2a$10$T27Rb7Z/9ID2rZoNCIThJuAZx/Nw7wkMiGaST0KV9VZmEUR.4bbFO",
+  "avatar": "1637029332802_img.jpg"
  }
 ]

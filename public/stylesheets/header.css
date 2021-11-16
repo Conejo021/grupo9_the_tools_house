@@ -20,7 +20,7 @@
     display: block;
     width: 26px;
     height: 2px;
-    background-color: black;
+    background-color: white;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     -webkit-transform-origin: 3px 2px;
@@ -52,7 +52,7 @@
   .header__links a {
     position: relative;
     font-size: 0.875rem;
-    color: #9698a6;
+    color: #000000;
     -webkit-transition: color 200ms ease-in-out;
     transition: color 200ms ease-in-out;
     font-weight: 700;
@@ -73,11 +73,11 @@
   }
   
   .header__links a:hover {
-    color: #2d314d;
+    color: #ffffff;
   }
   
   .header__links a:hover::before {
-    background: #2d314d;
+    background: #ffffff;
   }
   
   .header__logo{
@@ -103,11 +103,11 @@
   @-webkit-keyframes fade-in {
     from {
       visibility: hidden;
-      opacity: 0;
+      opacity: 20;
     }
     1% {
       visibility: visible;
-      opacity: 0;
+      opacity: 20;
     }
     to {
       visibility: visible;
@@ -210,7 +210,7 @@
     bottom: 0px;
     left: 0px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
-    background-image: linear-gradient(#2d314d, transparent);
+    background-image: linear-gradient(#ffffff, transparent);
   }
   
   .header nav {
@@ -229,7 +229,7 @@
     display: block;
     width: 26px;
     height: 2px;
-    background-color: #2d314d;
+    background-color: #ffffff;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     -webkit-transform-origin: 3px 1px;

@@ -34,8 +34,8 @@ a, a:active, a:hover {
 
 .button {
   padding: 1rem;
-  background-color: black;
-  border: 1px solid white;
+  background-color: rgb(252, 252, 252);
+  border: 1px solid rgb(0, 0, 0);
   color: white;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
